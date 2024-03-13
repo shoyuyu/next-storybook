@@ -34,3 +34,32 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# runtime data (Added settings)
+.pids
+*.pid
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+# directory (Added settings)
+jspm_packages/
+
+# dotenv (Added settings)
+.env
+.env.test
+
+# debug (Added settings)
+.nyc_output
+
+# IDE - VSCode (Added settings)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace

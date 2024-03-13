@@ -1,0 +1,23 @@
+.is-small.my-ds-breadcrumbs > ul > li {
+  font-size: 0.8rem;
+}
+.is-normal.my-ds-breadcrumbs > ul > li {
+  font-size: 1rem;
+}
+.is-large.my-ds-breadcrumbs > ul > li {
+  font-size: 1.2rem;
+}
+
+.my-ds-breadcrumbs > ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.my-ds-breadcrumbs > ul > li {
+  font-size: 1rem;
+}
+.my-ds-breadcrumbs > ul > li:not(:last-of-type)::after {
+  margin: 0.8em;
+  color: hsl(0, 0%, 62%);
+  content: "/";
+}

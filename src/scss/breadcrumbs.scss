@@ -1,0 +1,36 @@
+$slash-color: hsl(0deg 0% 62% / 100%);
+$list-sizes: (
+  "small": 0.8rem,
+  "normal": 1rem,
+  "large": 1.2rem,
+);
+
+%list-size {
+  @each $name, $size in $list-sizes {
+    &.is-#{$name} {
+      > ul > li {
+        font-size: $size;
+      }
+    }
+  }
+}
+
+.my-ds-breadcrumbs {
+  > ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    > li {
+      font-size: map-get($list-sizes, "normal");
+
+      &:not(:last-of-type)::after {
+        margin: 0.8em;
+        color: $slash-color;
+        content: "/";
+      }
+    }
+  }
+
+  @extend %list-size;
+}
