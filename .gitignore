@@ -49,7 +49,7 @@ next-env.d.ts
 # directory (Added settings)
 jspm_packages/
 
-# dotenv (Added settings)
+# env (Added settings)
 .env
 .env.test
 
@@ -63,3 +63,6 @@ jspm_packages/
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
+
+# npm audit report
+audit-report.json

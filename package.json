@@ -16,7 +16,7 @@
     "sass:watch": "sass src/scss/:dest/components --no-source-map --watch"
   },
   "dependencies": {
-    "next": "14.1.1",
+    "next": "^14.2.33",
     "react": "^18",
     "react-dom": "^18"
   },
@@ -52,5 +52,8 @@
     "stylelint-config-standard": "^36.0.0",
     "stylelint-scss": "^6.2.1",
     "typescript": "^5"
+  },
+  "overrides": {
+    "tar-fs": "^3.1.1"
   }
 }
